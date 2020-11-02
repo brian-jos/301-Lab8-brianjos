@@ -84,7 +84,9 @@ public class CityList {
      *         First city in list
      */
     public City getFirstCity() {
-        City emptyCity = new City("", "");
-        return emptyCity;
+        if (!cities.isEmpty()) {
+            throw new ArrayIndexOutOfBoundsException();
+        }
+        return cities.get(0);
     }
 }
