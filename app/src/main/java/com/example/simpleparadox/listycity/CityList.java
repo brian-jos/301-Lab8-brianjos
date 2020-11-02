@@ -77,4 +77,14 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Gets the first city in list
+     * @return firstCity
+     *         First city in list
+     */
+    public City getFirstCity() {
+        City emptyCity = new City("", "");
+        return emptyCity;
+    }
 }
