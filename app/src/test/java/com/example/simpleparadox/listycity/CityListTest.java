@@ -34,4 +34,10 @@ class CityListTest {
         CityList cityList = mockCityList();
         assertEquals(1, mockCity().compareTo(cityList.getCities().get(0)));
     }
+
+    @Test
+    void testGetFirstCity() {
+        CityList cityList = mockCityList();
+        assertEquals(mockCity(), cityList.getFirstCity());
+    }
 }
